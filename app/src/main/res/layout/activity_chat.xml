@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 메시지 받는 사람의 이름 -->
+    <TextView
+        android:id="@+id/textReceiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="받는 사람 이름"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 메시지 입력란 -->
+
+    <!-- 전송 버튼 -->
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textReceiverName"
+        android:layout_marginTop="609dp"
+        android:gravity="top|start"
+        android:hint="메시지를 입력하세요"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="4dp"
+        android:text="전송"
+        android:textSize="18sp" />
+
+</RelativeLayout>

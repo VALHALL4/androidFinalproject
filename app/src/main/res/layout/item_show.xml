@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 판매자 정보 -->
+    <TextView
+        android:id="@+id/textSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="판매자"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        />
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSeller"
+        android:layout_marginTop="50dp"
+        android:text="게시물 제목"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- 내용 -->
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="100dp"
+        android:text="게시물 내용이 여기에 들어갑니다."
+        android:textSize="16sp"
+        android:textColor="#666666" />
+
+    <!-- 가격 -->
+
+    <!-- 판매 여부 -->
+
+    <!-- 메시지 보내기 버튼 -->
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textContent"
+        android:layout_marginTop="110dp"
+        android:text="가격:"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textSaleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPrice"
+        android:layout_marginTop="60dp"
+        android:text="판매 여부: 판매 중"
+
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSaleStatus"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="메시지 보내기"
+        android:textSize="18sp" />
+
+</RelativeLayout>
